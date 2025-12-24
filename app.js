@@ -248,7 +248,8 @@ let result=arr.forEach(item=>{
 res+=`
 <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
       <div class="card shadow-sm p-2 text-center">
-        <img src="${item.image}" class="card-img-top" alt="">
+	  <div class="card-header">
+        <img src="${item.image}" class="card-img-top" alt=""></div>
         <div class="card-body">
           <h6 class="card-title">${item.title.slice(0,35)}...</h6>
           <h5 class="text-success">$${item.price}</h5>
@@ -266,6 +267,7 @@ res+=`
 )
 
 document.getElementById("pp").innerHTML=res
+
 
 
 
